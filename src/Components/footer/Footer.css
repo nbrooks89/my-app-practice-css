@@ -25,3 +25,10 @@
 .main-footer__link a:active {
     color: #ccc;
 }
+@media (min-width: 40rem) {
+    .main-footer__link {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+  }
+  

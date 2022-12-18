@@ -4,9 +4,18 @@ import './TopNavBar.css';
 import { Link } from "react-router-dom";
     import imgIcon from "../../assets/uhost-icon.png"
 
-const TopNavBar =()=> {
-  return (
+    
+    const TopNavBar =({setIsSideNavOpen ,isSideNavOpen})=> {
+        
+        
+
+        return (
     <header className="main-header">
+        <button  onClick={()=>setIsSideNavOpen(!isSideNavOpen)} className="toggle-button">
+                <span className="toggle-button__bar"></span>
+                <span className="toggle-button__bar"></span>
+                <span className="toggle-button__bar"></span>
+            </button>
         <div className="main-header__brand">
         <Link  to="/">  <img src={imgIcon}/></Link>
        
